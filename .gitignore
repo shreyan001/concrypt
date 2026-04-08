@@ -8,8 +8,3 @@ coverage/
 typechain-types/
 cache/
 artifacts/
-
-CURRENT_OBJECTIVE.md
-
-*.md
-!README.md

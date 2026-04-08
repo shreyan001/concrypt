@@ -1,0 +1,24 @@
+{
+  "order:5c2affb638eaae0e": {
+    "job": {
+      "description": "Zero-Day Buffer Overflow Fix for Concrypt-Core Storage Module.",
+      "budget": "10",
+      "provider": "0x7083d904291D855Eaf10B707F4238dFF9f017051",
+      "evaluator": "0x08c3e48c9e7bc28b9e4258e282c43618EF7D50E5",
+      "expiry": 1774286130
+    },
+    "strategy": {
+      "caseType": "CODE_FIX",
+      "requiredSkills": [
+        "github-skill",
+        "vlayer-skill",
+        "security-analysis-skill"
+      ],
+      "rubric": "1. Patch Verification: Confirm the pull request modifies the affected 'Concrypt-Core Storage Module' logic, replacing unsafe memory operations (e.g., memcpy, sprintf) with bounds-checked alternatives. 2. Exploit Neutralization: Execute the provided Zero-Day Proof of Concept (PoC); the fix is successful only if the PoC no longer triggers a segmentation fault or unauthorized memory access. 3. Regression Suite: Ensure all existing storage module unit tests pass with 100% success rate. 4. Memory Safety: Run Valgrind or a similar memory sanitizer to ensure the fix does not introduce memory leaks or use-after-free vulnerabilities. 5. Cryptographic Proof: Verify via vlayer-skill that the patched binary hash matches the audited source code committed to the repository.",
+      "confidence": 0.98
+    },
+    "orderId": "5c2affb638eaae0e",
+    "status": "CREATED",
+    "createdAt": 1774278937739
+  }
+}

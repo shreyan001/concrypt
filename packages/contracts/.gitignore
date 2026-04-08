@@ -18,3 +18,7 @@
 
 # Hardhat coverage reports
 /coverage
+
+# Ignore markdown files except README
+*.md
+!README.md
